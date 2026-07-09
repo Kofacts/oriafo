@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<title>Oriafo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    background: radial-gradient(ellipse at 50% 30%, #223026 0%, #17201B 65%, #121812 100%);
+    color: #EDE6D8;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+  }
+
+  .wrap {
+    text-align: center;
+    max-width: 520px;
+    animation: rise 0.9s ease-out both;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .wordmark {
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    font-size: 42px;
+    letter-spacing: 0.06em;
+    color: #F1E8D4;
+  }
+
+  .wordmark img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .rule {
+    width: 46px;
+    height: 2px;
+    background: #C98A2C;
+    margin: 18px auto 20px;
+  }
+
+  .kicker {
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #90A096;
+    margin-bottom: 34px;
+  }
+
+  .headline {
+    font-family: 'Spectral', serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #EDE6D8;
+    margin-bottom: 14px;
+  }
+
+  .headline .accent { color: #E3B463; }
+
+  .sub {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #90A096;
+    max-width: 400px;
+    margin: 0 auto 44px;
+  }
+
+  .contact {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13.5px;
+    color: #C7D0C9;
+  }
+
+  .contact a {
+    color: #C7D0C9;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .contact a:hover {
+    color: #E3B463;
+    border-bottom-color: #E3B463;
+  }
+
+  .divider {
+    color: #4A5A4E;
+  }
+
+  .contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .footer-note {
+    margin-top: 56px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #4A5A4E;
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="wordmark"><img src="logo.png" alt="Oriafo Logo"></div>
+    <div class="rule"></div>
+    <div class="kicker">Palm Kernel Processing &middot; Umuahia, Nigeria</div>
+
+    <div class="headline">Our mill is <span class="accent">opening this month.</span></div>
+    <p class="sub">
+      We're building a palm kernel processing operation from the ground up in Umuahia, Abia State.
+      This site is still under construction, much like the mill itself.
+    </p>
+
+    <div class="contact">
+      <div class="contact-row">
+        <a href="mailto:hello@oriafo.com">hello@oriafo.com</a>
+        <span class="divider">&middot;</span>
+        <a href="tel:+2347089605331">+234 708 960 5331</a>
+      </div>
+    </div>
+
+    <div class="footer-note">Oriafo Limited</div>
+  </div>
+
+</body>
+</html>
