@@ -27,8 +27,8 @@ export default function Login() {
     <div className="login-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', background: 'var(--bg-main)', color: 'var(--text-main)', padding: '24px' }}>
       <div className="login-box" style={{ background: 'var(--bg-card)', padding: '40px', borderRadius: '12px', width: '100%', maxWidth: '400px', border: '1px solid var(--border)' }}>
         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-          <div style={{ fontFamily: '"Spectral", serif', fontSize: '32px', color: 'var(--accent)', fontWeight: '600' }}>ORIAFO</div>
-          <div style={{ color: 'var(--text-muted)', fontSize: '14px', marginTop: '4px' }}>Admin Dashboard</div>
+          <img src="/oriafo/2 (2).png" alt="Oriafo Logo" style={{ height: '50px', width: 'auto', objectFit: 'contain', display: 'block', margin: '0 auto' }} />
+          <div style={{ color: 'var(--text-muted)', fontSize: '14px', marginTop: '8px' }}>Admin Dashboard</div>
         </div>
         
         <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
