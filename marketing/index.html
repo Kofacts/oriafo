@@ -230,7 +230,7 @@
   /* ── STATS ROW ── */
   .stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0;
     border: 1px solid var(--line);
     border-radius: 4px;
@@ -513,7 +513,7 @@
     .hero .lede { font-size: 18px; }
     h2.section-heading { font-size: 28px; }
     p.section-body { font-size: 17px; }
-    .stats { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
     .stat { border-right: 0; border-bottom: 1px solid var(--line); }
     .stat:last-child { border-bottom: 0; }
     .stages { grid-template-columns: 1fr; }
@@ -594,14 +594,13 @@
       <div>
         <h2 class="section-heading" id="whatwedo-heading">A working mill in the heart of palm country.</h2>
         <p class="section-body">
-          Our mill in Bende LGA, Abia State, opened in October 2026. It runs
-          <span class="bracket">[two]</span> processing lines and serves farmers and aggregators
-          across the state, processing their kernels for a fee and producing palm kernel products
-          for our own customers.
+          Our mill in Bende LGA, Abia State, opened in October 2026. It runs two processing lines
+          and serves farmers and aggregators across the state, processing their kernels for a fee
+          and producing palm kernel products for our own customers.
         </p>
         <p class="section-body">
           We run it as a formal business: kernels are weighed and recorded on arrival, every batch
-          is logged, and payments and fees go through a single company account.
+          is logged, and every sale comes with a proper invoice from a registered company.
         </p>
         <dl class="stats">
           <div class="stat">
@@ -610,11 +609,15 @@
           </div>
           <div class="stat">
             <dt>Processing lines</dt>
-            <dd><span class="bracket">[2]</span></dd>
+            <dd>2</dd>
           </div>
           <div class="stat">
             <dt>Capacity</dt>
-            <dd><span class="bracket">[X tonnes / day]</span></dd>
+            <dd>Up to 8 tonnes per day</dd>
+          </div>
+          <div class="stat">
+            <dt>Power</dt>
+            <dd>Solar-powered site</dd>
           </div>
         </dl>
       </div>
@@ -633,14 +636,14 @@
           <h3>Palm kernel oil</h3>
           <p>
             Crude palm kernel oil for soap, cosmetics and food manufacturing. Supplied in
-            <span class="bracket">[drums of X litres / bulk]</span>, with volumes agreed per order.
+            25-litre kegs, or 200-litre drums for bulk orders.
           </p>
         </div>
         <div class="product-card">
           <h3>Palm kernel cake</h3>
           <p>
-            The protein-rich residue from pressing, used in livestock and poultry feed. Available
-            to feed mills and farms in <span class="bracket">[bags of X kg / bulk]</span>.
+            The protein-rich residue from pressing, used in livestock, poultry and fish feed.
+            Available in 50&nbsp;kg bags, or in bulk by the tonne.
           </p>
         </div>
         <div class="product-card">
@@ -651,6 +654,7 @@
           </p>
         </div>
       </div>
+      <p style="font-size:15px;color:var(--muted);font-family:var(--mono);letter-spacing:.04em;margin-top:20px;">Samples are available on request for qualified buyers.</p>
     </div>
   </section>
 
@@ -665,7 +669,8 @@
         <ul>
           <li>Soap and cosmetics manufacturers who need consistent palm kernel oil.</li>
           <li>Food processors sourcing oil for production.</li>
-          <li>Feed mills and livestock farms buying palm kernel cake.</li>
+          <li>Feed mills, poultry farms and fish farms buying palm kernel cake.</li>
+          <li>Factories and industrial users buying palm kernel shells as fuel.</li>
           <li>Aggregators and traders who need processing capacity close to supply.</li>
           <li>Farmer cooperatives that want their kernels processed formally and on record.</li>
         </ul>
@@ -692,11 +697,15 @@
           </div>
           <div class="how-item">
             <h3>Secure facility</h3>
-            <p>A fenced, gated site with on-site security and <span class="bracket">[CCTV monitoring]</span>.</p>
+            <p>A fenced, gated site with on-site security and CCTV monitoring.</p>
           </div>
           <div class="how-item">
             <h3>Safety first</h3>
             <p>Our operators work with proper protective equipment, including safety boots, gloves and eye protection, because a formal operation starts with the people running it.</p>
+          </div>
+          <div class="how-item" style="grid-column: 1 / -1;">
+            <h3>Formal and accountable</h3>
+            <p>Oriafo Limited is a registered Nigerian company (RC&nbsp;9536339). Every transaction goes through company accounts, with invoices and receipts.</p>
           </div>
         </div>
       </div>
@@ -787,19 +796,27 @@
         <dl class="faq-list">
           <div class="faq-item">
             <dt>Can you supply on a recurring basis?</dt>
-            <dd>Yes. We agree volumes and schedules with each customer. Tell us what you need and how often.</dd>
+            <dd>Yes. We agree volumes and schedules with each customer, whether that&rsquo;s a single order or a monthly supply contract.</dd>
           </div>
           <div class="faq-item">
             <dt>What&rsquo;s your minimum order?</dt>
-            <dd><span class="bracket">[X drums / X tonnes]</span>. Contact us for larger or recurring orders.</dd>
+            <dd>One 200-litre drum of oil, or 1 tonne (20 bags) of cake. We welcome larger and recurring orders.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>Can I get a sample before ordering?</dt>
+            <dd>Yes. We provide samples to qualified buyers so you can check quality before committing.</dd>
           </div>
           <div class="faq-item">
             <dt>Do you deliver?</dt>
-            <dd><span class="bracket">[We deliver within Abia State and to neighbouring states / Buyers collect from the mill]</span>, by arrangement.</dd>
+            <dd>Buyers can collect from the mill, or we can arrange delivery within Abia State and neighbouring states, including Imo, Enugu, Ebonyi and Rivers, at cost.</dd>
+          </div>
+          <div class="faq-item">
+            <dt>How do payments work?</dt>
+            <dd>Payment is by bank transfer to our company account. For large orders we take a deposit to confirm, with the balance due before dispatch. Every order comes with an invoice and receipt.</dd>
           </div>
           <div class="faq-item">
             <dt>Can I visit the mill?</dt>
-            <dd>Yes. Business visits are welcome by appointment.</dd>
+            <dd>Yes. Business visits are welcome by appointment, Monday to Saturday.</dd>
           </div>
           <div class="faq-item">
             <dt>Do you process kernels for farmers?</dt>
@@ -824,12 +841,15 @@
               For supply, partnerships or visits, email
               <a href="mailto:hello@oriafo.com" id="contact-email">hello@oriafo.com</a>
               or call <a href="tel:+2347032585074" id="contact-phone">0703 258 5074</a>.
+              We reply to every business enquiry within one working day.
+            </p>
+            <p class="contact-detail" style="margin-top:16px;">
+              Monday to Saturday, 8am to 6pm.
             </p>
           </div>
           <div>
             <p class="contact-detail">
-              Oriafo Limited, Bende LGA, Abia State, Nigeria.
-              <span class="bracket">[Landmark or road.]</span><br><br>
+              Oriafo Limited, Bende LGA, Abia State, Nigeria.<br><br>
               <a href="https://maps.google.com/?q=5.658206,7.555727" target="_blank" rel="noopener noreferrer" id="contact-map">View on Google Maps &rarr;</a>
             </p>
           </div>
