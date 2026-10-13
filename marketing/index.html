@@ -194,16 +194,25 @@
     font-size: 15px;
     padding: 14px 22px;
     border-radius: 3px;
-    transition: background .2s;
+    border: 1px solid var(--gold);
+    transition: background .2s, color .2s, border-color .2s;
   }
-  .btn:hover { background: var(--gold-hi); }
+  .btn:hover {
+    background: transparent;
+    color: var(--gold-hi);
+    border-color: var(--gold-hi);
+  }
   .btn--outline {
     background: transparent;
     color: var(--ink);
-    border: 1px solid rgba(240,235,224,.25);
-    transition: border-color .2s, color .2s;
+    border: 1px solid rgba(240,235,224,.22);
+    transition: background .2s, color .2s, border-color .2s;
   }
-  .btn--outline:hover { border-color: var(--gold-hi); color: var(--gold-hi); }
+  .btn--outline:hover {
+    background: var(--gold);
+    color: #111813;
+    border-color: var(--gold);
+  }
 
   .hero-mark {
     position: absolute;
