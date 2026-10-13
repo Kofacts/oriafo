@@ -1,7 +1,7 @@
 {
   "name": "Oriafo",
   "short_name": "Oriafo",
-  "description": "First solar-powered palm kernel mill in Bende, Abia State.",
+  "description": "Palm kernel processing in Bende, Abia State.",
   "start_url": "/",
   "icons": [
     { "src": "/favicon/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
